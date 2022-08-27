@@ -1,4 +1,5 @@
-/** @type import('hardhat/config').HardhatUserConfig */
+require('@nomiclabs/hardhat-ethers');
+
 module.exports = {
     defaultNetwork: 'rinkeby',
     networks: {

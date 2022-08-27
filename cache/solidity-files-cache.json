@@ -287,6 +287,41 @@
       "artifacts": [
         "Token"
       ]
+    },
+    "/Users/lpd/Code/ethernaut-solutions/src/vault/Vault.sol": {
+      "lastModificationDate": 1661629318060,
+      "contentHash": "cd34cff6ee33b6b74a9c587822a869a2",
+      "sourceName": "src/vault/Vault.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.6.0"
+      ],
+      "artifacts": [
+        "Vault"
+      ]
     }
   }
 }

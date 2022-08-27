@@ -1,0 +1,48 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "Vault",
+  "sourceName": "src/vault/Vault.sol",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "_password",
+          "type": "bytes32"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "inputs": [],
+      "name": "locked",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "_password",
+          "type": "bytes32"
+        }
+      ],
+      "name": "unlock",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x608060405234801561001057600080fd5b506040516101173803806101178339818101604052602081101561003357600080fd5b50516000805460ff191660019081179091555560c3806100546000396000f3fe6080604052348015600f57600080fd5b506004361060325760003560e01c8063cf309012146037578063ec9b5b3a146051575b600080fd5b603d606d565b604080519115158252519081900360200190f35b606b60048036036020811015606557600080fd5b50356076565b005b60005460ff1681565b806001541415608a576000805460ff191690555b5056fea26469706673582212208c19dd99d7d86cba16243c457467f92ea4d6cd34257c07c7e14d7c9e70b0403a64736f6c634300060c0033",
+  "deployedBytecode": "0x6080604052348015600f57600080fd5b506004361060325760003560e01c8063cf309012146037578063ec9b5b3a146051575b600080fd5b603d606d565b604080519115158252519081900360200190f35b606b60048036036020811015606557600080fd5b50356076565b005b60005460ff1681565b806001541415608a576000805460ff191690555b5056fea26469706673582212208c19dd99d7d86cba16243c457467f92ea4d6cd34257c07c7e14d7c9e70b0403a64736f6c634300060c0033",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}
