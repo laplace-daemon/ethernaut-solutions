@@ -1,0 +1,22 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "SelfDestruct",
+  "sourceName": "src/force/SelfDestruct.sol",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "address payable",
+          "name": "target",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "payable",
+      "type": "constructor"
+    }
+  ],
+  "bytecode": "0x60806040526040516032380380603283398181016040526020811015602357600080fd5b50516001600160a01b038116fffe",
+  "deployedBytecode": "0x6080604052600080fdfea264697066735822122017a9afdc690900267fc59f2449d476ecddfc49595bbbd9aee8aaf090a83d6c4764736f6c634300060c0033",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}

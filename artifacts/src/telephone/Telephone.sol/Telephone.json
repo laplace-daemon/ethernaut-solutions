@@ -1,0 +1,42 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "Telephone",
+  "sourceName": "src/telephone/Telephone.sol",
+  "abi": [
+    {
+      "inputs": [],
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_owner",
+          "type": "address"
+        }
+      ],
+      "name": "changeOwner",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "owner",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x608060405234801561001057600080fd5b50600080546001600160a01b0319163317905560e8806100316000396000f3fe6080604052348015600f57600080fd5b506004361060325760003560e01c80638da5cb5b146037578063a6f9dae1146059575b600080fd5b603d607e565b604080516001600160a01b039092168252519081900360200190f35b607c60048036036020811015606d57600080fd5b50356001600160a01b0316608d565b005b6000546001600160a01b031681565b32331460af57600080546001600160a01b0319166001600160a01b0383161790555b5056fea26469706673582212203c309cfd3f2bfe0044685f3e1c3a786c4ce9167188f4c7d02eb61d535fab6baf64736f6c634300060c0033",
+  "deployedBytecode": "0x6080604052348015600f57600080fd5b506004361060325760003560e01c80638da5cb5b146037578063a6f9dae1146059575b600080fd5b603d607e565b604080516001600160a01b039092168252519081900360200190f35b607c60048036036020811015606d57600080fd5b50356001600160a01b0316608d565b005b6000546001600160a01b031681565b32331460af57600080546001600160a01b0319166001600160a01b0383161790555b5056fea26469706673582212203c309cfd3f2bfe0044685f3e1c3a786c4ce9167188f4c7d02eb61d535fab6baf64736f6c634300060c0033",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}

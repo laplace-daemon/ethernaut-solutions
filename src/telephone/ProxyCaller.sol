@@ -2,7 +2,7 @@
 pragma solidity ^0.6.0;
 
 interface Target {
-    function changeOwner(address _owner) public;
+    function changeOwner(address _owner) external;
 }
 
 contract ProxyCaller {

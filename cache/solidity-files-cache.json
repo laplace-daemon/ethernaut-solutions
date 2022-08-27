@@ -1,0 +1,292 @@
+{
+  "_format": "hh-sol-cache-2",
+  "files": {
+    "/Users/lpd/Code/ethernaut-solutions/src/coin-flip/CoinFlip.sol": {
+      "lastModificationDate": 1661287887282,
+      "contentHash": "fddc0f3cfdd58f60033b6fcda279cb43",
+      "sourceName": "src/coin-flip/CoinFlip.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/math/SafeMath.sol"
+      ],
+      "versionPragmas": [
+        "^0.6.0"
+      ],
+      "artifacts": [
+        "CoinFlip"
+      ]
+    },
+    "/Users/lpd/Code/ethernaut-solutions/node_modules/@openzeppelin/contracts/math/SafeMath.sol": {
+      "lastModificationDate": 1661618047858,
+      "contentHash": "8d3e8360f480055853ded99acb0dea51",
+      "sourceName": "@openzeppelin/contracts/math/SafeMath.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.6.0"
+      ],
+      "artifacts": [
+        "SafeMath"
+      ]
+    },
+    "/Users/lpd/Code/ethernaut-solutions/src/coin-flip/Exploiter.sol": {
+      "lastModificationDate": 1661626859048,
+      "contentHash": "0a9c405e5a2c295db609a745a150da83",
+      "sourceName": "src/coin-flip/Exploiter.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/math/SafeMath.sol"
+      ],
+      "versionPragmas": [
+        "^0.6.0"
+      ],
+      "artifacts": [
+        "Exploiter",
+        "Target"
+      ]
+    },
+    "/Users/lpd/Code/ethernaut-solutions/src/delegation/Delegation.sol": {
+      "lastModificationDate": 1661362528892,
+      "contentHash": "4c43e82c280d5185d9fe815030a4124e",
+      "sourceName": "src/delegation/Delegation.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.6.0"
+      ],
+      "artifacts": [
+        "Delegate",
+        "Delegation"
+      ]
+    },
+    "/Users/lpd/Code/ethernaut-solutions/src/force/SelfDestruct.sol": {
+      "lastModificationDate": 1661626759045,
+      "contentHash": "96c094501422ca72c46a5ba43cceef79",
+      "sourceName": "src/force/SelfDestruct.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.6.0"
+      ],
+      "artifacts": [
+        "SelfDestruct"
+      ]
+    },
+    "/Users/lpd/Code/ethernaut-solutions/src/telephone/ProxyCaller.sol": {
+      "lastModificationDate": 1661626781032,
+      "contentHash": "345101fc192bf94d0010a6e0a3a785ee",
+      "sourceName": "src/telephone/ProxyCaller.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.6.0"
+      ],
+      "artifacts": [
+        "ProxyCaller",
+        "Target"
+      ]
+    },
+    "/Users/lpd/Code/ethernaut-solutions/src/telephone/Telephone.sol": {
+      "lastModificationDate": 1661309814561,
+      "contentHash": "ad205a251be4522e6b1ddd122f53f1ea",
+      "sourceName": "src/telephone/Telephone.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.6.0"
+      ],
+      "artifacts": [
+        "Telephone"
+      ]
+    },
+    "/Users/lpd/Code/ethernaut-solutions/src/token/Token.sol": {
+      "lastModificationDate": 1661362962482,
+      "contentHash": "012e533fe941348bae1738f4369d069f",
+      "sourceName": "src/token/Token.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.6.0"
+      ],
+      "artifacts": [
+        "Token"
+      ]
+    }
+  }
+}

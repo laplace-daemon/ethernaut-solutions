@@ -1,0 +1,239 @@
+{
+  "id": "dd79617785e495cb6dd16a4cd5b11851",
+  "_format": "hh-sol-build-info-1",
+  "solcVersion": "0.6.12",
+  "solcLongVersion": "0.6.12+commit.27d51765",
+  "input": {
+    "language": "Solidity",
+    "sources": {
+      "src/force/SelfDestruct.sol": {
+        "content": "// SPDX-License-Identifier: MIT\npragma solidity ^0.6.0;\n\ncontract SelfDestruct {\n    constructor(address payable target) public payable {\n        selfdestruct(target);\n    }\n}\n"
+      }
+    },
+    "settings": {
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "outputSelection": {
+        "*": {
+          "*": [
+            "abi",
+            "evm.bytecode",
+            "evm.deployedBytecode",
+            "evm.methodIdentifiers",
+            "metadata"
+          ],
+          "": [
+            "ast"
+          ]
+        }
+      }
+    }
+  },
+  "output": {
+    "contracts": {
+      "src/force/SelfDestruct.sol": {
+        "SelfDestruct": {
+          "abi": [
+            {
+              "inputs": [
+                {
+                  "internalType": "address payable",
+                  "name": "target",
+                  "type": "address"
+                }
+              ],
+              "stateMutability": "payable",
+              "type": "constructor"
+            }
+          ],
+          "evm": {
+            "bytecode": {
+              "linkReferences": {},
+              "object": "60806040526040516032380380603283398181016040526020811015602357600080fd5b50516001600160a01b038116fffe",
+              "opcodes": "PUSH1 0x80 PUSH1 0x40 MSTORE PUSH1 0x40 MLOAD PUSH1 0x32 CODESIZE SUB DUP1 PUSH1 0x32 DUP4 CODECOPY DUP2 DUP2 ADD PUSH1 0x40 MSTORE PUSH1 0x20 DUP2 LT ISZERO PUSH1 0x23 JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP MLOAD PUSH1 0x1 PUSH1 0x1 PUSH1 0xA0 SHL SUB DUP2 AND SELFDESTRUCT INVALID ",
+              "sourceMap": "57:118:0:-:0;;;85:88;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;85:88:0;-1:-1:-1;;;;;146:20:0;;"
+            },
+            "deployedBytecode": {
+              "immutableReferences": {},
+              "linkReferences": {},
+              "object": "6080604052600080fdfea264697066735822122017a9afdc690900267fc59f2449d476ecddfc49595bbbd9aee8aaf090a83d6c4764736f6c634300060c0033",
+              "opcodes": "PUSH1 0x80 PUSH1 0x40 MSTORE PUSH1 0x0 DUP1 REVERT INVALID LOG2 PUSH5 0x6970667358 0x22 SLT KECCAK256 OR 0xA9 0xAF 0xDC PUSH10 0x900267FC59F2449D476 0xEC 0xDD 0xFC 0x49 MSIZE JUMPDEST 0xBB 0xD9 0xAE 0xE8 0xAA CREATE SWAP1 0xA8 RETURNDATASIZE PUSH13 0x4764736F6C634300060C003300 ",
+              "sourceMap": "57:118:0:-:0;;;;;"
+            },
+            "methodIdentifiers": {}
+          },
+          "metadata": "{\"compiler\":{\"version\":\"0.6.12+commit.27d51765\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address payable\",\"name\":\"target\",\"type\":\"address\"}],\"stateMutability\":\"payable\",\"type\":\"constructor\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"src/force/SelfDestruct.sol\":\"SelfDestruct\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"src/force/SelfDestruct.sol\":{\"keccak256\":\"0xf80b2bfa27b721a5d07a0a2a0e276e3c136463f56150df75438f5cea583b8b55\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://cd7258cc7490f419f01145e866d3551d44cc4e046e4b8dfb18ba8745c4184c62\",\"dweb:/ipfs/QmaHcnqthozQxca6Z54PWN6g1aUUUQRgGV9LNCKEG443DY\"]}},\"version\":1}"
+        }
+      }
+    },
+    "sources": {
+      "src/force/SelfDestruct.sol": {
+        "ast": {
+          "absolutePath": "src/force/SelfDestruct.sol",
+          "exportedSymbols": {
+            "SelfDestruct": [
+              12
+            ]
+          },
+          "id": 13,
+          "license": "MIT",
+          "nodeType": "SourceUnit",
+          "nodes": [
+            {
+              "id": 1,
+              "literals": [
+                "solidity",
+                "^",
+                "0.6",
+                ".0"
+              ],
+              "nodeType": "PragmaDirective",
+              "src": "32:23:0"
+            },
+            {
+              "abstract": false,
+              "baseContracts": [],
+              "contractDependencies": [],
+              "contractKind": "contract",
+              "documentation": null,
+              "fullyImplemented": true,
+              "id": 12,
+              "linearizedBaseContracts": [
+                12
+              ],
+              "name": "SelfDestruct",
+              "nodeType": "ContractDefinition",
+              "nodes": [
+                {
+                  "body": {
+                    "id": 10,
+                    "nodeType": "Block",
+                    "src": "136:37:0",
+                    "statements": [
+                      {
+                        "expression": {
+                          "argumentTypes": null,
+                          "arguments": [
+                            {
+                              "argumentTypes": null,
+                              "id": 7,
+                              "name": "target",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 3,
+                              "src": "159:6:0",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_address_payable",
+                                "typeString": "address payable"
+                              }
+                            }
+                          ],
+                          "expression": {
+                            "argumentTypes": [
+                              {
+                                "typeIdentifier": "t_address_payable",
+                                "typeString": "address payable"
+                              }
+                            ],
+                            "id": 6,
+                            "name": "selfdestruct",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": -21,
+                            "src": "146:12:0",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_function_selfdestruct_nonpayable$_t_address_payable_$returns$__$",
+                              "typeString": "function (address payable)"
+                            }
+                          },
+                          "id": 8,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "kind": "functionCall",
+                          "lValueRequested": false,
+                          "names": [],
+                          "nodeType": "FunctionCall",
+                          "src": "146:20:0",
+                          "tryCall": false,
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_tuple$__$",
+                            "typeString": "tuple()"
+                          }
+                        },
+                        "id": 9,
+                        "nodeType": "ExpressionStatement",
+                        "src": "146:20:0"
+                      }
+                    ]
+                  },
+                  "documentation": null,
+                  "id": 11,
+                  "implemented": true,
+                  "kind": "constructor",
+                  "modifiers": [],
+                  "name": "",
+                  "nodeType": "FunctionDefinition",
+                  "overrides": null,
+                  "parameters": {
+                    "id": 4,
+                    "nodeType": "ParameterList",
+                    "parameters": [
+                      {
+                        "constant": false,
+                        "id": 3,
+                        "mutability": "mutable",
+                        "name": "target",
+                        "nodeType": "VariableDeclaration",
+                        "overrides": null,
+                        "scope": 11,
+                        "src": "97:22:0",
+                        "stateVariable": false,
+                        "storageLocation": "default",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address_payable",
+                          "typeString": "address payable"
+                        },
+                        "typeName": {
+                          "id": 2,
+                          "name": "address",
+                          "nodeType": "ElementaryTypeName",
+                          "src": "97:15:0",
+                          "stateMutability": "payable",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_address_payable",
+                            "typeString": "address payable"
+                          }
+                        },
+                        "value": null,
+                        "visibility": "internal"
+                      }
+                    ],
+                    "src": "96:24:0"
+                  },
+                  "returnParameters": {
+                    "id": 5,
+                    "nodeType": "ParameterList",
+                    "parameters": [],
+                    "src": "136:0:0"
+                  },
+                  "scope": 12,
+                  "src": "85:88:0",
+                  "stateMutability": "payable",
+                  "virtual": false,
+                  "visibility": "public"
+                }
+              ],
+              "scope": 13,
+              "src": "57:118:0"
+            }
+          ],
+          "src": "32:144:0"
+        },
+        "id": 0
+      }
+    }
+  }
+}

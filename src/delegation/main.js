@@ -1,6 +1,6 @@
 const ethers = require('ethers');
 
-const { signer } = require('../utils/init');
+const { signer } = require('../../utils/init');
 
 const INSTANCE_ADDRESS = '0x4D8bfa99d46F2b118C01fBddBB46e5Aed9e6aEEE';
 

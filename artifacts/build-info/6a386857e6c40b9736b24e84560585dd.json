@@ -1,0 +1,439 @@
+{
+  "id": "6a386857e6c40b9736b24e84560585dd",
+  "_format": "hh-sol-build-info-1",
+  "solcVersion": "0.6.12",
+  "solcLongVersion": "0.6.12+commit.27d51765",
+  "input": {
+    "language": "Solidity",
+    "sources": {
+      "src/telephone/ProxyCaller.sol": {
+        "content": "// SPDX-License-Identifier: MIT\npragma solidity ^0.6.0;\n\ninterface Target {\n    function changeOwner(address _owner) external;\n}\n\ncontract ProxyCaller {\n    address target = 0x5694aE8A7C8ed1E86BF735881e497d87CF714696;\n\n    function changeOwner() external {\n        Target(target).changeOwner(msg.sender);\n    }\n}\n"
+      }
+    },
+    "settings": {
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "outputSelection": {
+        "*": {
+          "*": [
+            "abi",
+            "evm.bytecode",
+            "evm.deployedBytecode",
+            "evm.methodIdentifiers",
+            "metadata"
+          ],
+          "": [
+            "ast"
+          ]
+        }
+      }
+    }
+  },
+  "output": {
+    "contracts": {
+      "src/telephone/ProxyCaller.sol": {
+        "ProxyCaller": {
+          "abi": [
+            {
+              "inputs": [],
+              "name": "changeOwner",
+              "outputs": [],
+              "stateMutability": "nonpayable",
+              "type": "function"
+            }
+          ],
+          "evm": {
+            "bytecode": {
+              "linkReferences": {},
+              "object": "6080604052600080546001600160a01b031916735694ae8a7c8ed1e86bf735881e497d87cf71469617905534801561003657600080fd5b5060ca806100456000396000f3fe6080604052348015600f57600080fd5b506004361060285760003560e01c806362a0947714602d575b600080fd5b60336035565b005b600080546040805163a6f9dae160e01b815233600482015290516001600160a01b039092169263a6f9dae19260248084019382900301818387803b158015607b57600080fd5b505af1158015608e573d6000803e3d6000fd5b5050505056fea26469706673582212200800e8057f40a9ced36349623b57741ab51dd495a3a6cb70f65345063d42c3a464736f6c634300060c0033",
+              "opcodes": "PUSH1 0x80 PUSH1 0x40 MSTORE PUSH1 0x0 DUP1 SLOAD PUSH1 0x1 PUSH1 0x1 PUSH1 0xA0 SHL SUB NOT AND PUSH20 0x5694AE8A7C8ED1E86BF735881E497D87CF714696 OR SWAP1 SSTORE CALLVALUE DUP1 ISZERO PUSH2 0x36 JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP PUSH1 0xCA DUP1 PUSH2 0x45 PUSH1 0x0 CODECOPY PUSH1 0x0 RETURN INVALID PUSH1 0x80 PUSH1 0x40 MSTORE CALLVALUE DUP1 ISZERO PUSH1 0xF JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP PUSH1 0x4 CALLDATASIZE LT PUSH1 0x28 JUMPI PUSH1 0x0 CALLDATALOAD PUSH1 0xE0 SHR DUP1 PUSH4 0x62A09477 EQ PUSH1 0x2D JUMPI JUMPDEST PUSH1 0x0 DUP1 REVERT JUMPDEST PUSH1 0x33 PUSH1 0x35 JUMP JUMPDEST STOP JUMPDEST PUSH1 0x0 DUP1 SLOAD PUSH1 0x40 DUP1 MLOAD PUSH4 0xA6F9DAE1 PUSH1 0xE0 SHL DUP2 MSTORE CALLER PUSH1 0x4 DUP3 ADD MSTORE SWAP1 MLOAD PUSH1 0x1 PUSH1 0x1 PUSH1 0xA0 SHL SUB SWAP1 SWAP3 AND SWAP3 PUSH4 0xA6F9DAE1 SWAP3 PUSH1 0x24 DUP1 DUP5 ADD SWAP4 DUP3 SWAP1 SUB ADD DUP2 DUP4 DUP8 DUP1 EXTCODESIZE ISZERO DUP1 ISZERO PUSH1 0x7B JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP GAS CALL ISZERO DUP1 ISZERO PUSH1 0x8E JUMPI RETURNDATASIZE PUSH1 0x0 DUP1 RETURNDATACOPY RETURNDATASIZE PUSH1 0x0 REVERT JUMPDEST POP POP POP POP JUMP INVALID LOG2 PUSH5 0x6970667358 0x22 SLT KECCAK256 ADDMOD STOP 0xE8 SDIV PUSH32 0x40A9CED36349623B57741AB51DD495A3A6CB70F65345063D42C3A464736F6C63 NUMBER STOP MOD 0xC STOP CALLER ",
+              "sourceMap": "130:182:0:-:0;;;157:59;;;-1:-1:-1;;;;;;157:59:0;174:42;157:59;;;130:182;;;;;;;;;;;;;;;;"
+            },
+            "deployedBytecode": {
+              "immutableReferences": {},
+              "linkReferences": {},
+              "object": "6080604052348015600f57600080fd5b506004361060285760003560e01c806362a0947714602d575b600080fd5b60336035565b005b600080546040805163a6f9dae160e01b815233600482015290516001600160a01b039092169263a6f9dae19260248084019382900301818387803b158015607b57600080fd5b505af1158015608e573d6000803e3d6000fd5b5050505056fea26469706673582212200800e8057f40a9ced36349623b57741ab51dd495a3a6cb70f65345063d42c3a464736f6c634300060c0033",
+              "opcodes": "PUSH1 0x80 PUSH1 0x40 MSTORE CALLVALUE DUP1 ISZERO PUSH1 0xF JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP PUSH1 0x4 CALLDATASIZE LT PUSH1 0x28 JUMPI PUSH1 0x0 CALLDATALOAD PUSH1 0xE0 SHR DUP1 PUSH4 0x62A09477 EQ PUSH1 0x2D JUMPI JUMPDEST PUSH1 0x0 DUP1 REVERT JUMPDEST PUSH1 0x33 PUSH1 0x35 JUMP JUMPDEST STOP JUMPDEST PUSH1 0x0 DUP1 SLOAD PUSH1 0x40 DUP1 MLOAD PUSH4 0xA6F9DAE1 PUSH1 0xE0 SHL DUP2 MSTORE CALLER PUSH1 0x4 DUP3 ADD MSTORE SWAP1 MLOAD PUSH1 0x1 PUSH1 0x1 PUSH1 0xA0 SHL SUB SWAP1 SWAP3 AND SWAP3 PUSH4 0xA6F9DAE1 SWAP3 PUSH1 0x24 DUP1 DUP5 ADD SWAP4 DUP3 SWAP1 SUB ADD DUP2 DUP4 DUP8 DUP1 EXTCODESIZE ISZERO DUP1 ISZERO PUSH1 0x7B JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP GAS CALL ISZERO DUP1 ISZERO PUSH1 0x8E JUMPI RETURNDATASIZE PUSH1 0x0 DUP1 RETURNDATACOPY RETURNDATASIZE PUSH1 0x0 REVERT JUMPDEST POP POP POP POP JUMP INVALID LOG2 PUSH5 0x6970667358 0x22 SLT KECCAK256 ADDMOD STOP 0xE8 SDIV PUSH32 0x40A9CED36349623B57741AB51DD495A3A6CB70F65345063D42C3A464736F6C63 NUMBER STOP MOD 0xC STOP CALLER ",
+              "sourceMap": "130:182:0:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;223:87;;;:::i;:::-;;;272:6;;;265:38;;;-1:-1:-1;;;265:38:0;;292:10;265:38;;;;;;-1:-1:-1;;;;;272:6:0;;;;265:26;;:38;;;;;;;;;;272:6;;265:38;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;223:87::o"
+            },
+            "methodIdentifiers": {
+              "changeOwner()": "62a09477"
+            }
+          },
+          "metadata": "{\"compiler\":{\"version\":\"0.6.12+commit.27d51765\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"changeOwner\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"src/telephone/ProxyCaller.sol\":\"ProxyCaller\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"src/telephone/ProxyCaller.sol\":{\"keccak256\":\"0xd637794310e5ae64712c5c3aa7411210725de35a3313ee477bb53eea7c7846dd\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://18f1eada65e92ebad5f9e5ac534e2b4780c9393470c2ed33d889b5bdbb6243f0\",\"dweb:/ipfs/QmcK8jkPQoiMQVb9Xg5NvZ7xFCumxVm8Eu9VdnKgb1b4F3\"]}},\"version\":1}"
+        },
+        "Target": {
+          "abi": [
+            {
+              "inputs": [
+                {
+                  "internalType": "address",
+                  "name": "_owner",
+                  "type": "address"
+                }
+              ],
+              "name": "changeOwner",
+              "outputs": [],
+              "stateMutability": "nonpayable",
+              "type": "function"
+            }
+          ],
+          "evm": {
+            "bytecode": {
+              "linkReferences": {},
+              "object": "",
+              "opcodes": "",
+              "sourceMap": ""
+            },
+            "deployedBytecode": {
+              "immutableReferences": {},
+              "linkReferences": {},
+              "object": "",
+              "opcodes": "",
+              "sourceMap": ""
+            },
+            "methodIdentifiers": {
+              "changeOwner(address)": "a6f9dae1"
+            }
+          },
+          "metadata": "{\"compiler\":{\"version\":\"0.6.12+commit.27d51765\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_owner\",\"type\":\"address\"}],\"name\":\"changeOwner\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"src/telephone/ProxyCaller.sol\":\"Target\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"src/telephone/ProxyCaller.sol\":{\"keccak256\":\"0xd637794310e5ae64712c5c3aa7411210725de35a3313ee477bb53eea7c7846dd\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://18f1eada65e92ebad5f9e5ac534e2b4780c9393470c2ed33d889b5bdbb6243f0\",\"dweb:/ipfs/QmcK8jkPQoiMQVb9Xg5NvZ7xFCumxVm8Eu9VdnKgb1b4F3\"]}},\"version\":1}"
+        }
+      }
+    },
+    "sources": {
+      "src/telephone/ProxyCaller.sol": {
+        "ast": {
+          "absolutePath": "src/telephone/ProxyCaller.sol",
+          "exportedSymbols": {
+            "ProxyCaller": [
+              23
+            ],
+            "Target": [
+              7
+            ]
+          },
+          "id": 24,
+          "license": "MIT",
+          "nodeType": "SourceUnit",
+          "nodes": [
+            {
+              "id": 1,
+              "literals": [
+                "solidity",
+                "^",
+                "0.6",
+                ".0"
+              ],
+              "nodeType": "PragmaDirective",
+              "src": "32:23:0"
+            },
+            {
+              "abstract": false,
+              "baseContracts": [],
+              "contractDependencies": [],
+              "contractKind": "interface",
+              "documentation": null,
+              "fullyImplemented": false,
+              "id": 7,
+              "linearizedBaseContracts": [
+                7
+              ],
+              "name": "Target",
+              "nodeType": "ContractDefinition",
+              "nodes": [
+                {
+                  "body": null,
+                  "documentation": null,
+                  "functionSelector": "a6f9dae1",
+                  "id": 6,
+                  "implemented": false,
+                  "kind": "function",
+                  "modifiers": [],
+                  "name": "changeOwner",
+                  "nodeType": "FunctionDefinition",
+                  "overrides": null,
+                  "parameters": {
+                    "id": 4,
+                    "nodeType": "ParameterList",
+                    "parameters": [
+                      {
+                        "constant": false,
+                        "id": 3,
+                        "mutability": "mutable",
+                        "name": "_owner",
+                        "nodeType": "VariableDeclaration",
+                        "overrides": null,
+                        "scope": 6,
+                        "src": "101:14:0",
+                        "stateVariable": false,
+                        "storageLocation": "default",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        },
+                        "typeName": {
+                          "id": 2,
+                          "name": "address",
+                          "nodeType": "ElementaryTypeName",
+                          "src": "101:7:0",
+                          "stateMutability": "nonpayable",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_address",
+                            "typeString": "address"
+                          }
+                        },
+                        "value": null,
+                        "visibility": "internal"
+                      }
+                    ],
+                    "src": "100:16:0"
+                  },
+                  "returnParameters": {
+                    "id": 5,
+                    "nodeType": "ParameterList",
+                    "parameters": [],
+                    "src": "125:0:0"
+                  },
+                  "scope": 7,
+                  "src": "80:46:0",
+                  "stateMutability": "nonpayable",
+                  "virtual": false,
+                  "visibility": "external"
+                }
+              ],
+              "scope": 24,
+              "src": "57:71:0"
+            },
+            {
+              "abstract": false,
+              "baseContracts": [],
+              "contractDependencies": [],
+              "contractKind": "contract",
+              "documentation": null,
+              "fullyImplemented": true,
+              "id": 23,
+              "linearizedBaseContracts": [
+                23
+              ],
+              "name": "ProxyCaller",
+              "nodeType": "ContractDefinition",
+              "nodes": [
+                {
+                  "constant": false,
+                  "id": 10,
+                  "mutability": "mutable",
+                  "name": "target",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 23,
+                  "src": "157:59:0",
+                  "stateVariable": true,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 8,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "157:7:0",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": {
+                    "argumentTypes": null,
+                    "hexValue": "307835363934614538413743386564314538364246373335383831653439376438374346373134363936",
+                    "id": 9,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": true,
+                    "kind": "number",
+                    "lValueRequested": false,
+                    "nodeType": "Literal",
+                    "src": "174:42:0",
+                    "subdenomination": null,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address_payable",
+                      "typeString": "address payable"
+                    },
+                    "value": "0x5694aE8A7C8ed1E86BF735881e497d87CF714696"
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "body": {
+                    "id": 21,
+                    "nodeType": "Block",
+                    "src": "255:55:0",
+                    "statements": [
+                      {
+                        "expression": {
+                          "argumentTypes": null,
+                          "arguments": [
+                            {
+                              "argumentTypes": null,
+                              "expression": {
+                                "argumentTypes": null,
+                                "id": 17,
+                                "name": "msg",
+                                "nodeType": "Identifier",
+                                "overloadedDeclarations": [],
+                                "referencedDeclaration": -15,
+                                "src": "292:3:0",
+                                "typeDescriptions": {
+                                  "typeIdentifier": "t_magic_message",
+                                  "typeString": "msg"
+                                }
+                              },
+                              "id": 18,
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "memberName": "sender",
+                              "nodeType": "MemberAccess",
+                              "referencedDeclaration": null,
+                              "src": "292:10:0",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_address_payable",
+                                "typeString": "address payable"
+                              }
+                            }
+                          ],
+                          "expression": {
+                            "argumentTypes": [
+                              {
+                                "typeIdentifier": "t_address_payable",
+                                "typeString": "address payable"
+                              }
+                            ],
+                            "expression": {
+                              "argumentTypes": null,
+                              "arguments": [
+                                {
+                                  "argumentTypes": null,
+                                  "id": 14,
+                                  "name": "target",
+                                  "nodeType": "Identifier",
+                                  "overloadedDeclarations": [],
+                                  "referencedDeclaration": 10,
+                                  "src": "272:6:0",
+                                  "typeDescriptions": {
+                                    "typeIdentifier": "t_address",
+                                    "typeString": "address"
+                                  }
+                                }
+                              ],
+                              "expression": {
+                                "argumentTypes": [
+                                  {
+                                    "typeIdentifier": "t_address",
+                                    "typeString": "address"
+                                  }
+                                ],
+                                "id": 13,
+                                "name": "Target",
+                                "nodeType": "Identifier",
+                                "overloadedDeclarations": [],
+                                "referencedDeclaration": 7,
+                                "src": "265:6:0",
+                                "typeDescriptions": {
+                                  "typeIdentifier": "t_type$_t_contract$_Target_$7_$",
+                                  "typeString": "type(contract Target)"
+                                }
+                              },
+                              "id": 15,
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": false,
+                              "kind": "typeConversion",
+                              "lValueRequested": false,
+                              "names": [],
+                              "nodeType": "FunctionCall",
+                              "src": "265:14:0",
+                              "tryCall": false,
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_contract$_Target_$7",
+                                "typeString": "contract Target"
+                              }
+                            },
+                            "id": 16,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": false,
+                            "lValueRequested": false,
+                            "memberName": "changeOwner",
+                            "nodeType": "MemberAccess",
+                            "referencedDeclaration": 6,
+                            "src": "265:26:0",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_function_external_nonpayable$_t_address_$returns$__$",
+                              "typeString": "function (address) external"
+                            }
+                          },
+                          "id": 19,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "kind": "functionCall",
+                          "lValueRequested": false,
+                          "names": [],
+                          "nodeType": "FunctionCall",
+                          "src": "265:38:0",
+                          "tryCall": false,
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_tuple$__$",
+                            "typeString": "tuple()"
+                          }
+                        },
+                        "id": 20,
+                        "nodeType": "ExpressionStatement",
+                        "src": "265:38:0"
+                      }
+                    ]
+                  },
+                  "documentation": null,
+                  "functionSelector": "62a09477",
+                  "id": 22,
+                  "implemented": true,
+                  "kind": "function",
+                  "modifiers": [],
+                  "name": "changeOwner",
+                  "nodeType": "FunctionDefinition",
+                  "overrides": null,
+                  "parameters": {
+                    "id": 11,
+                    "nodeType": "ParameterList",
+                    "parameters": [],
+                    "src": "243:2:0"
+                  },
+                  "returnParameters": {
+                    "id": 12,
+                    "nodeType": "ParameterList",
+                    "parameters": [],
+                    "src": "255:0:0"
+                  },
+                  "scope": 23,
+                  "src": "223:87:0",
+                  "stateMutability": "nonpayable",
+                  "virtual": false,
+                  "visibility": "external"
+                }
+              ],
+              "scope": 24,
+              "src": "130:182:0"
+            }
+          ],
+          "src": "32:281:0"
+        },
+        "id": 0
+      }
+    }
+  }
+}
