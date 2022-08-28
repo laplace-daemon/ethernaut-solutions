@@ -393,6 +393,79 @@
         "King",
         "PettyKing"
       ]
+    },
+    "/Users/lpd/Code/ethernaut-solutions/src/reentrance/Reentrance.sol": {
+      "lastModificationDate": 1661646423889,
+      "contentHash": "5b89022d6c7c409cc01b957af4920d26",
+      "sourceName": "src/reentrance/Reentrance.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/math/SafeMath.sol"
+      ],
+      "versionPragmas": [
+        "^0.6.0"
+      ],
+      "artifacts": [
+        "Reentrance"
+      ]
+    },
+    "/Users/lpd/Code/ethernaut-solutions/src/reentrance/Thief.sol": {
+      "lastModificationDate": 1661648890448,
+      "contentHash": "201da30bd55c65280dfc1ace052b5a93",
+      "sourceName": "src/reentrance/Thief.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.6.0"
+      ],
+      "artifacts": [
+        "Target",
+        "Thief"
+      ]
     }
   }
 }
