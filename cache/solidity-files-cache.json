@@ -322,6 +322,77 @@
       "artifacts": [
         "Vault"
       ]
+    },
+    "/Users/lpd/Code/ethernaut-solutions/src/king/King.sol": {
+      "lastModificationDate": 1661636080127,
+      "contentHash": "12e1e2ffcd77358fdeb11206971b2fab",
+      "sourceName": "src/king/King.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.6.0"
+      ],
+      "artifacts": [
+        "King"
+      ]
+    },
+    "/Users/lpd/Code/ethernaut-solutions/src/king/PettyKing.sol": {
+      "lastModificationDate": 1661646013419,
+      "contentHash": "e3f15b49468b8a311773a03053c624a1",
+      "sourceName": "src/king/PettyKing.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.6.0"
+      ],
+      "artifacts": [
+        "King",
+        "PettyKing"
+      ]
     }
   }
 }
